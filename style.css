@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: "Poppins";
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: #e7ddfe;
+}
+
+.Container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 40px auto;
+    justify-content: center;
+    background-color: #fefefe;
+    border-radius: 10px;
+}
+
+.Design {
+    background-color: #7746ff;
+    width: 35vw;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+form {
+    flex-direction: row;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 auto;
+    text-align: left;
+}
+
+.Title {
+    padding: 20px 0 0 100px;
+}
+
+
+
+fieldset {
+    border: none;
+    padding: 20px 40px 0 100px;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.left {
+    width: 40%;
+    margin: 0 30px 0 0;
+}
+
+.right {
+    width: 40%;
+}
+
+label {
+    padding: 10px 10px 10px 0;
+    text-align: left;
+}
+
+input, select {
+    margin: 0 auto;
+    width: 100%;
+    height: 40%;
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+select {
+    margin-bottom: 15px;
+}
+
+button {
+    float: right;
+    margin: 20px 40px 50px 20px;
+    background-color: #7746ff;
+    color: #fefefe;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 3px solid #7746ff;
+}
+
+button:hover {
+    background-color: #fefefe;
+    color: #7746ff;
+    transition: background-color 0.5s ease;
+}
+
+.inline {
+    display: inline-block;
+    width: unset; /* removes width restricing inline */
+    vertical-align: center;
+    margin: 0 5px 0 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}
+
+#back {
+    background-color: #fefefe;
+    color: #7746ff;
+}
+
+#back:hover {
+    border: 3px solid #7746ff;
+    color: #fefefe;
+    background-color: #7746ff;
+}
+
+@media(max-width: 600px) {
+    .Design {
+        display: none;
+    }
+
+    form {
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+

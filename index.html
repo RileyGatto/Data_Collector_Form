@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hackathon Sign Up Form</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        
+        <div class="Container">
+            <div class="Design"></div>
+            <form id = "form" method = "post" action="index.php">
+                <div id="form1">
+                    <div class="Title"><h1>Get Started</h1></div>
+                    <fieldset>
+                        <div class="left">
+                            <label for="fname">First Name<input id="fname" name="firstname" type="text" required  maxlength="120" pattern="[A-Za-z]+"/></label> 
+                        </div>
+                        <div class="right">
+                            <label for="lname">Last Name<input id="lname" name="lastname" type="text"  maxlength="120" pattern="[A-Za-z]+"/></label> 
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="Email">Email<input id="Email" name="Email" type="email" /></label>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="Age">Age<input id="Age" name="Age" type="date"  /></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="Experience">Experience Level
+                            <select id="Experience" name="Experience">
+                                <option value="3">Beginner</option>
+                                <option value="2">Intermidate</option>
+                                <option value="1">Advanced</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <button id="Next" type="button" action="" onclick="Transition()">Next</button>
+                </div>
+                <div id="form2">
+                    <div class="Title"><h1>Details</h1></div>
+                    <fieldset>
+                        <label for="education">University / School<input id="education" name="edu" type="text"/></label>
+                    </fieldset>
+                    <fieldset class="column">
+                        <legend>Location You Will Be Attending</legend>
+                        <label for="sydney"><input id="sydney" name="radio" type="radio" class="inline" checked/>Sydney</label>
+                        <label for="canberra"><input id="canberra" name="radio" type="radio" class="inline" />Canberra</label>
+                        <label for="melbourne"><input id="melbourne" name="radio" type="radio" class="inline" />Melbourne</label>
+                    </fieldset>
+                    <fieldset class="column">
+                        <legend>Interests</legend>
+                        <label for="fe"><input id="fe" name="fe" type="checkbox" class="inline"/>Front-End Development</label>
+                        <label for="be"><input id="be" name="be" type="checkbox" class="inline"/>Back-End Development</label>
+                        <label for="robotics"><input id="robotics" name="rob" type="checkbox" class="inline"/>Robotics</label>
+                    </fieldset>
+                    <button id="submit" type="submit" onclick="">Finish</button>
+                    <button id="back" type="button" onclick="reverseTransition()">Back</button>
+                </div>
+            </form>
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
